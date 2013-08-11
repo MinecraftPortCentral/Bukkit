@@ -684,8 +684,6 @@ public interface Player extends HumanEntity, Conversable, CommandSender, Offline
      *
      * @param scale if the client health display is scaled
      */
-    public void setScaleHealth(boolean scale);
-
     public void setHealthScaled(boolean scale);
 
     /**
