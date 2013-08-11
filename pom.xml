@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>za.co.mcportcentral</groupId>
     <artifactId>mcpc-api</artifactId>
-    <version>1.6.2-R0.1-SNAPSHOT</version>
+    <version>1.6.2-R0.2-SNAPSHOT</version>
     <name>MCPC-API</name>
     <url>https://github.com/MinecraftPortCentral/Bukkit</url>
 
