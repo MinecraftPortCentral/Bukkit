@@ -16,7 +16,6 @@ public class TimedRegisteredListener extends RegisteredListener {
     public long curTickTotal = 0;
     public long violations = 0;
     // Spigot end
-    private Event event;
     private Class<? extends Event> eventClass;
     private boolean multiple = false;
 
@@ -27,7 +26,7 @@ public class TimedRegisteredListener extends RegisteredListener {
     @Override
     public void callEvent(Event event) throws EventException {
         // Spigot start
-        if ( !org.bukkit.Bukkit.getServer().getPluginManager().useTimings() )
+        if ( org.bukkit.Bukkit.getServer() != null && !org.bukkit.Bukkit.getServer().getPluginManager().useTimings() )
         {
             super.callEvent( event );
             return;

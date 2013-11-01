@@ -6,7 +6,7 @@ package org.bukkit.entity;
 public interface Arrow extends Projectile
 {
 
-    public class Spigot
+    public class Spigot extends Entity.Spigot
     {
 
         public double getDamage()

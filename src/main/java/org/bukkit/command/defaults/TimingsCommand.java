@@ -126,7 +126,7 @@ public class TimingsCommand extends BukkitCommand {
                             totalTime += time;
                             Class<? extends Event> eventClass = trl.getEventClass();
                             if (count > 0 && eventClass != null) {
-                                fileTimings.println("    " + eventClass.getSimpleName() + (trl.hasMultiple() ? " (and sub-classes)" : "") + " Time: " + time + " Count: " + count + " Avg: " + avg + " Violations: " + trl.violations); // Spigot);
+                                fileTimings.println("    " + eventClass.getSimpleName() + (trl.hasMultiple() ? " (and sub-classes)" : "") + " Time: " + time + " Count: " + count + " Avg: " + avg + " Violations: " + trl.violations); // Spigot
                             }
                         }
                     }
