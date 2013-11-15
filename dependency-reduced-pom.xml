@@ -4,7 +4,7 @@
   <groupId>za.co.mcportcentral</groupId>
   <artifactId>mcpc-api</artifactId>
   <name>MCPC-API</name>
-  <version>1.6.4-R2.0-SNAPSHOT</version>
+  <version>1.6.4-R2.1-SNAPSHOT</version>
   <url>https://github.com/MinecraftPortCentral/Bukkit</url>
   <build>
     <plugins>
@@ -28,8 +28,12 @@
             <configuration>
               <relocations>
                 <relocation>
-                  <pattern>com.google</pattern>
-                  <shadedPattern>guava10.com.google</shadedPattern>
+                  <pattern>com.google.common</pattern>
+                  <shadedPattern>guava10.com.google.common</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>com.google.gson</pattern>
+                  <shadedPattern>org.bukkit.craftbukkit.libs.com.google.gson</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>
