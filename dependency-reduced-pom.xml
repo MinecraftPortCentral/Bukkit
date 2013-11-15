@@ -31,10 +31,6 @@
                   <pattern>com.google.common</pattern>
                   <shadedPattern>guava10.com.google.common</shadedPattern>
                 </relocation>
-                <relocation>
-                  <pattern>com.google.gson</pattern>
-                  <shadedPattern>org.bukkit.craftbukkit.libs.com.google.gson</shadedPattern>
-                </relocation>
               </relocations>
             </configuration>
           </execution>
