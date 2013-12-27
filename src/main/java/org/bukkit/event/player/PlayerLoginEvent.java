@@ -33,11 +33,13 @@ public class PlayerLoginEvent extends PlayerEvent {
     }
 
     /**
-     * This constructor defaults message to an empty string, and result to ALLOWED
+     * This constructor defaults message to an empty string, and result to
+     * ALLOWED
      *
      * @param player The {@link Player} for this event
      * @param hostname The hostname that was used to connect to the server
-     * @param address The address the player used to connect, provided for timing issues
+     * @param address The address the player used to connect, provided for
+     *     timing issues
      */
     public PlayerLoginEvent(final Player player, final String hostname, final InetAddress address, final InetAddress realAddress) { // Spigot
         super(player);
@@ -53,7 +55,8 @@ public class PlayerLoginEvent extends PlayerEvent {
     }
 
     /**
-     * @deprecated Address and hostname should be provided in other constructor
+     * @deprecated Address and hostname should be provided in other
+     *     constructor
      */
     @Deprecated
     public PlayerLoginEvent(final Player player, final Result result, final String message) {
@@ -65,7 +68,8 @@ public class PlayerLoginEvent extends PlayerEvent {
      *
      * @param player The {@link Player} for this event
      * @param hostname The hostname that was used to connect to the server
-     * @param address The address the player used to connect, provided for timing issues
+     * @param address The address the player used to connect, provided for
+     *     timing issues
      * @param result The result status for this event
      * @param message The message to be displayed if result denies login
      */
@@ -105,7 +109,8 @@ public class PlayerLoginEvent extends PlayerEvent {
     }
 
     /**
-     * Gets the current kick message that will be used if getResult() != Result.ALLOWED
+     * Gets the current kick message that will be used if getResult() !=
+     * Result.ALLOWED
      *
      * @return Current kick message
      */
@@ -123,7 +128,8 @@ public class PlayerLoginEvent extends PlayerEvent {
     }
 
     /**
-     * Gets the hostname that the player used to connect to the server, or blank if unknown
+     * Gets the hostname that the player used to connect to the server, or
+     * blank if unknown
      *
      * @return The hostname
      */
@@ -151,12 +157,12 @@ public class PlayerLoginEvent extends PlayerEvent {
     }
 
     /**
-     * Gets the {@link InetAddress} for the Player associated
-     * with this event. This method is provided as a workaround for
-     * player.getAddress() returning null during PlayerLoginEvent.
+     * Gets the {@link InetAddress} for the Player associated with this event.
+     * This method is provided as a workaround for player.getAddress()
+     * returning null during PlayerLoginEvent.
      *
-     * @return The address for this player. For legacy compatibility,
-     * this may be null.
+     * @return The address for this player. For legacy compatibility, this may
+     *     be null.
      */
     public InetAddress getAddress() {
         return address;
@@ -189,7 +195,8 @@ public class PlayerLoginEvent extends PlayerEvent {
          */
         KICK_BANNED,
         /**
-         * The player is not allowed to log in, due to them not being on the white list
+         * The player is not allowed to log in, due to them not being on the
+         * white list
          */
         KICK_WHITELIST,
         /**

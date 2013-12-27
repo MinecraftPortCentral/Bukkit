@@ -69,7 +69,8 @@ public enum Effect {
      */
     STEP_SOUND(2001, Type.SOUND, Material.class),
     /**
-     * Visual effect of a splash potion breaking. Needs potion data value as additional info.
+     * Visual effect of a splash potion breaking. Needs potion data value as
+     * additional info.
      */
     POTION_BREAK(2002, Type.VISUAL, Potion.class),
     /**
@@ -275,7 +276,8 @@ public enum Effect {
     }
 
     /**
-     * @return if this Effect isn't of type PARTICLE it returns the class which represents data for this effect, or null if none
+     * @return The class which represents data for this effect, or null if
+     *     none
      */
     public Class<?> getData() {
         return this.data;
